@@ -31,6 +31,6 @@ def calculate(request):
             })
         except (ValueError, ZeroDivisionError):
             return render(request, 'calculator/home.html', {
-                'error': 'Некорректные данные. Пожалуйста, проверьте введенные значения и операцию.'
+                'error': 'Incorrect data. Please check the entered values and operation.'
             })
     return render(request, 'calculator/home.html')
